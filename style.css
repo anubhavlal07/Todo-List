@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 ::selection {
   color: #ffff;
   background: rgb(142, 73, 232);
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -16,8 +19,9 @@ body {
   padding: 10px;
   /* background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%); */
   /* background: linear-gradient(147deg, #000000 0%, #04619f 74%); */
-background: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background: linear-gradient(147deg, #000000 0%, #04619f 74%);
 }
+
 .wrapper {
   /* background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%); */
   /* background: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
@@ -31,17 +35,20 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   border-radius: 5px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
+
 .wrapper header {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
 }
+
 .wrapper .inputField {
   margin: 20px 0;
   width: 100%;
   display: flex;
   height: 45px;
 }
+
 .inputField input {
   width: 85%;
   height: 100%;
@@ -52,9 +59,11 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   padding-left: 15px;
   transition: all 0.3s ease;
 }
+
 .inputField input:focus {
   border-color: #8e49e8;
 }
+
 .inputField button {
   width: 50px;
   height: 100%;
@@ -70,18 +79,22 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .inputField button:hover,
 .footer button:hover {
   background: #721ce3;
 }
+
 .inputField button.active {
   opacity: 1;
   pointer-events: auto;
 }
+
 .wrapper .todoList {
   max-height: 250px;
   overflow-y: auto;
 }
+
 .todoList li {
   position: relative;
   list-style: none;
@@ -93,6 +106,7 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   overflow: hidden;
   word-wrap: break-word;
 }
+
 .todoList li .icon {
   position: absolute;
   right: -45px;
@@ -107,9 +121,11 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .todoList li:hover .icon {
   right: 0px;
 }
+
 .wrapper .footer {
   display: flex;
   width: 100%;
@@ -117,6 +133,7 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   align-items: center;
   justify-content: space-between;
 }
+
 .footer button {
   padding: 6px 10px;
   border-radius: 3px;
@@ -133,10 +150,12 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .footer button.active {
   opacity: 1;
   pointer-events: auto;
 }
+
 @media (min-width: 100px) and (max-width: 360px) {
   .footer button {
     padding: 3px 5px;
@@ -146,6 +165,7 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
     margin-left: 2.5px;
   }
 }
+
 /* @media (min-width: 300px) and (max-width: 800px) {
   #box-2 {
     display: block;
@@ -153,3 +173,19 @@ background: linear-gradient(147deg, #000000 0%, #04619f 74%);
     color: rgb(141, 219, 38);
   }
 } */
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
